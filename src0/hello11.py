@@ -10,4 +10,4 @@ def hello(to="world"):
     print("hello,", to)
 
 
-main()
+main()  # it works because hello is defined already 
