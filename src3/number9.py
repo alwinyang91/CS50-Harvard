@@ -11,7 +11,9 @@ def get_int(prompt):
         try:
             return int(input(prompt))
         except ValueError:
-            pass
+            print("x is not an integer")
 
 
-main()
+if __name__ == "__main__":
+    main()
+

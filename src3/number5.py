@@ -16,5 +16,5 @@ def get_int():
             break
     return x
 
-
-main()
+if __name__ == "__main__":
+    main()

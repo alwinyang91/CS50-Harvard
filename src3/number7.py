@@ -14,4 +14,6 @@ def get_int():
             print("x is not an integer")
 
 
-main()
+if __name__ == "__main__":
+    main()
+
