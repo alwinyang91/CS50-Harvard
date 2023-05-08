@@ -13,5 +13,5 @@ def print_square(size):
 def print_row(width):
     print("#" * width)
 
-
-main()
+if __name__ == "__main__":
+    main()
