@@ -2,8 +2,8 @@
 
 
 def main():
-    n = get_number()
-    meow(n)
+    number = get_number()
+    meow(number)
 
 
 def get_number():
