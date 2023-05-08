@@ -8,5 +8,5 @@ students = {
     "Draco": "Slytherin",
 }
 
-for student in students:
-    print(student, students[student], sep=", ")
+for student in students:  # only get the key
+    print(student)

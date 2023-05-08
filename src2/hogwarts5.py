@@ -1,5 +1,7 @@
 # Demonstrates iterating over a list of dict objects
 
+# a list of multiple dict
+# like a table with index
 students = [
     {"name": "Hermione", "house": "Gryffindor", "patronus": "Otter"},
     {"name": "Harry", "house": "Gryffindor", "patronus": "Stag"},
