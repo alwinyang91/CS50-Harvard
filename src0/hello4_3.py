@@ -6,10 +6,8 @@ print(*objects, sep=' ', end='\n', file=None, flush=False)
 
 '''
 
-name = input("What's your name? ")
-print("hello, ", end="")
-print(name)
+print("hello, \"friend\"")
 
-# name = input("What's your name? ")
-# print("hello, ", end="???")
-# print(name)
+# or
+print('hello, "friend"')
+

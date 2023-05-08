@@ -7,9 +7,5 @@ print(*objects, sep=' ', end='\n', file=None, flush=False)
 '''
 
 name = input("What's your name? ")
-print("hello, ", end="")
+print("hello, ", end="???")
 print(name)
-
-# name = input("What's your name? ")
-# print("hello, ", end="???")
-# print(name)
