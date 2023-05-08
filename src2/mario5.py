@@ -9,7 +9,7 @@ def print_square(size):
     for i in range(size):
         for j in range(size):
             print("#", end="")
-        print()
+        print()  # print nothing but make another line \n
 
 
 main()
