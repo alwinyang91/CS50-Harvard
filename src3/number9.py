@@ -6,6 +6,7 @@ def main():
     print(f"x is {x}")
 
 
+# make the function more reuseable
 def get_int(prompt):
     while True:
         try:
