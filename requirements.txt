@@ -1,4 +1,5 @@
 cowsay
 requests
 # pylint
-# black
+black
+joblib
