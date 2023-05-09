@@ -3,3 +3,4 @@ requests
 # pylint
 black
 joblib
+pytest

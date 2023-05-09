@@ -1,4 +1,4 @@
-from hello1 import hello
+from hello0 import hello
 
 
 def test_default():
@@ -7,3 +7,8 @@ def test_default():
 
 def test_argument():
     assert hello("David") == "hello, David"
+
+
+'''
+does not work, because hello function does not return anything
+'''

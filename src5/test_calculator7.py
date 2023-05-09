@@ -1,6 +1,6 @@
 import pytest
 
-from calculator import square
+from calculator7 import square
 
 
 def test_positive():
