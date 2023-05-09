@@ -9,18 +9,17 @@ class Student:
     def __str__(self):
         return f"{self.name} from {self.house}"
 
-    @classmethod
-    def get(cls):
-        name = input("Name: ")
-        house = input("House: ")
-        return cls(name, house)
 
-# def main() can be put in above, it does not matter,
-# because, main is called at last
+
 def main():
-    student = Student.get()
+    student = get_student()
     print(student)
 
+# can be more compact, see 20
+def get_student():
+    name = input("Name: ")
+    house = input("House: ")
+    return Student(name, house)
 
 if __name__ == "__main__":
     main()

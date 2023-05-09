@@ -4,7 +4,7 @@ import random
 
 
 class Hat:
-
+    # class variable:
     houses = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]
 
     @classmethod
@@ -12,4 +12,4 @@ class Hat:
         print(name, "is in", random.choice(cls.houses))
 
 
-Hat.sort("Harry")
+Hat.sort("Harry")  # now you do not need create an object

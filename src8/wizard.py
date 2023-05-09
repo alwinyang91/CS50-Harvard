@@ -18,6 +18,16 @@ class Student(Wizard):
     ...
 
 
+# class Professor(Wizard):
+#     def __init__(self, name, subject):
+#         if not name:
+#             raise ValueError("Missing name")
+#         self.name = name
+#         self.subject = subject
+
+#     ...
+
+# you can inherit name from Wizard
 class Professor(Wizard):
     def __init__(self, name, subject):
         super().__init__(name)
