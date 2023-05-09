@@ -10,6 +10,8 @@ class Vault:
     def __str__(self):
         return f"{self.galleons} Galleons, {self.sickles} Sickles, {self.knuts} Knuts"
 
+    # Note: you can not overload arbitrary opertor,
+    # there is a spice list of Python that you can overload
     def __add__(self, other):
         galleons = self.galleons + other.galleons
         sickles = self.sickles + other.sickles
