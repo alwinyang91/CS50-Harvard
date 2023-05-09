@@ -8,3 +8,10 @@ if re.search(r".+@.+\.edu", email):
     print("Valid")
 else:
     print("Invalid")
+
+
+'''
+% python validate7.py 
+this is an email zewen@abc.edu
+it works, need to be changed
+'''

@@ -1,13 +1,14 @@
-# Replaces character class with \w
+# Adds ^ and $ to regex
 
 import re
 
 email = input("What's your email? ").strip()
 
+
 '''
-\w means normal word a-zA-Z0-9_
+[^@] means any character except @
 '''
-if re.search(r"^\w+@\w+\.edu$", email):
+if re.search(r"^[^@]+@[^@]\.edu$", email):
     print("Valid")
 else:
     print("Invalid")
