@@ -1,7 +1,7 @@
 # Opens and saves binary files
 
 import sys
-
+# PIL: pillow
 from PIL import Image
 
 images = []
@@ -12,4 +12,9 @@ for arg in sys.argv[1:]:
 
 images[0].save(
     "costumes.gif", save_all=True, append_images=[images[1]], duration=200, loop=0
-)
+)  # loop = 0 will loop infinite
+
+
+'''
+% python costumes.py costume1.gif costume2.gif
+'''

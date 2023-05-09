@@ -12,5 +12,5 @@ def get_name(student):
     return student["name"]
 
 
-for student in sorted(students, key=get_name):
+for student in sorted(students, key=get_name):  # key must = a function
     print(f"{student['name']} is in {student['house']}")
