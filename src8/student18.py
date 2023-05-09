@@ -19,11 +19,13 @@ class Student:
     def house(self, house):
         if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
             raise ValueError("Invalid house")
-        self._house = house
+        self._house = house  # Note: in order to not confuse Python, 
+                            # need to change the attribute name
 
 
 def main():
     student = get_student()
+    student.house = "Number Four, Privet Drive"  # to make it works, cancel this line
     print(student)
 
 
@@ -35,3 +37,10 @@ def get_student():
 
 if __name__ == "__main__":
     main()
+
+
+'''
+python student18.py
+Harry
+Gryffindor
+'''

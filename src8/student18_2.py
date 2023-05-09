@@ -1,22 +1,29 @@
-# Removes patronus for simplicy, circumvents error-checking by setting attribute
+# Adds @property for house
 
 
 class Student:
     def __init__(self, name, house):
         if not name:
             raise ValueError("Invalid name")
-        if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
-            raise ValueError("Invalid house")
         self.name = name
         self.house = house
 
     def __str__(self):
         return f"{self.name} from {self.house}"
 
+    # Getter
+    def house(self):
+        return self.house
+    
+    # Setter
+    def house(self, house):
+        self.house = house
+    '''
+    it will not work, see 18
+    '''
 
 def main():
     student = get_student()
-    student.house = "Number Four, Privet Drive"  # you can still access the attribute
     print(student)
 
 

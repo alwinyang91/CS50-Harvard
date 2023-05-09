@@ -32,6 +32,7 @@ class Student:
 
 def main():
     student = get_student()
+    student._house = "Number Four, Privet Drive"  # it will work, but do not touch _attritude
     print(student)
 
 
@@ -43,3 +44,9 @@ def get_student():
 
 if __name__ == "__main__":
     main()
+
+'''
+python student19.py
+Harry
+Gryffindor
+'''

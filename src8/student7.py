@@ -9,7 +9,7 @@ def main():
 def get_student():
     name = input("Name: ")
     house = input("House: ")
-    return {"name": name, "house": house}
+    return {"name": name, "house": house}  # does not need to create a dict
 
 
 if __name__ == "__main__":

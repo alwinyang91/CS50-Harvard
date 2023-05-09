@@ -7,7 +7,7 @@ def main():
 
 
 def get_student():
-    student = {}
+    student = {}  # make as dictionary, so order does not matter
     student["name"] = input("Name: ")
     student["house"] = input("House: ")
     return student

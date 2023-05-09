@@ -1,23 +1,19 @@
-# Removes patronus for simplicy, circumvents error-checking by setting attribute
-
+# Adds validation in __init__ using raise
+import sys
 
 class Student:
     def __init__(self, name, house):
         if not name:
-            raise ValueError("Invalid name")
+            sys.exit("Missing name")  # but if we do not want exit the code?
         if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
             raise ValueError("Invalid house")
         self.name = name
         self.house = house
 
-    def __str__(self):
-        return f"{self.name} from {self.house}"
-
 
 def main():
     student = get_student()
-    student.house = "Number Four, Privet Drive"  # you can still access the attribute
-    print(student)
+    print(f"{student.name} from {student.house}")
 
 
 def get_student():
