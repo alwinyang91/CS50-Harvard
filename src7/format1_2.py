@@ -6,11 +6,9 @@ name = input("What's your name? ").strip()
 matches = re.search(r"^(.+), (.+)$", name)  # () can capture str in ()
 
 if matches:
-    last, first = matches.groups()  # here is groups() !!!
+    last = matches.groups(1)
+    first = matches.groups(2)
     name = first + " " + last
 print(f"hello, {name}")
 
-'''
-python format1.py
-Yang, Zewen
-'''
+
